@@ -21,6 +21,7 @@
   color: #000000;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 .logo {
@@ -77,6 +78,7 @@
   position: absolute;
   top: 64px;
   right: 0px;
+  overflow: hidden;
 }
 
 .content {
@@ -85,13 +87,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column
+  flex-direction: column;
 }
 
 .description {
   padding: 100px 0px 0px;
   width: 80%;
   justify-content: space-between;
+  min-height: 300px;
 }
 
 .two-columns {
@@ -167,7 +170,7 @@
   width: 1100px;
   list-style: none;
   display: flex;
-  margin: 0px;
+  margin: 0;
   justify-content: space-between;
   padding: 0px;
   flex-wrap: wrap;
@@ -302,7 +305,6 @@
   color: white;
   padding: 60px 0 40px;
   display: flex;
-  align-items: center;
   justify-content: center;
   box-sizing: border-box;
 }
@@ -351,7 +353,7 @@
 
 .footer__column-link {
   margin: 0;
-  padding: 10px 0;
+  padding: 0;
   color: white;
   text-decoration: none;
   line-height: 30px;
@@ -360,5 +362,6 @@
 }
 
 .footer__social-icon {
-  font-size: 16px;
+  width: 16px;
+  height: 16px;
 }
