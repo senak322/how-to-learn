@@ -7,6 +7,8 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: auto;
+  padding: 0px;
 }
 
 .header {
@@ -14,18 +16,349 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  position: relative;
+  background-color: #f2f2f2;
+  color: #000000;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 32px;
+  width: 183px;
+}
+
+.logo-place-header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
+
+.header__title {
+  width: 730px;
+  margin: 0px;
+  font-size: 102px;
+  line-height: 96px;
+  padding-left: 64px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.header__subtitle {
+  width: 388px;
+  margin: 0px;
+  font-size: 18px;
+  line-height: 25px;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  font-weight: normal;
+  z-index: 2;
+}
+
+.header__link {
+  color: #2f80ed;
+}
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: 1;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  top: 64px;
+  right: 0px;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
+.content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column
+}
+
+.description {
+  padding: 100px 0px 0px;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.two-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.two-columns__brief {
+  width: 175px;
+  color: #2f80ed;
+  margin: 0px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.two-columns__main-text {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__paragraph {
+  margin: 0px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  padding-bottom: 30px;
+  color: #000000;
+}
+
+.two-columns__paragraph:last-of-type {
+  padding: 0px;
+}
+
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+ .digits {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0px;
+  align-items: center;
+  color: #000000;
+}
+
+.section-title {
+  margin: 0px;
+  padding: 0 0 20px;
+  width: 60%;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  margin: 0px;
+  width: 60%;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.table {
+  width: 1100px;
+  list-style: none;
+  display: flex;
+  margin: 0px;
+  justify-content: space-between;
+  padding: 0px;
+  flex-wrap: wrap;
+}
+
+.table__cell {
+  width: 250px;
+  margin: 0px;
+  padding-top: 60px;
+}
+
+.table__heading {
+  margin: 0px;
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 20px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.table__text {
+  padding-bottom: 20px;
+  margin: 0px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.feynman {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  background-image: url(/images/feynman.png);
+  background-size: 867px 637px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  height: 890px;
+  position: relative;
+}
+
+.feynman__title {
+  width: 648px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 100px 0 0 0;
+  margin: 0;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+}
+
+.feynman__subtitle {
+  padding: 70px 0 0 0;
+  margin: 0;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.feynman__link {
+  margin: 0;
+  position: absolute;
+  right: 46px;
+  top: 50%;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.kaufman {
+  background-color: #1f1f1f;
+  width: 100%;
   color: white;
-  margin-right: 0;
-  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  padding: 90px 0px;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-title-theme-dark {
+  width: 60%;
+  z-index: 1;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.section-subtitle-theme-dark {
+  width: 60%;
+  z-index: 1;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.table__cell-theme-dark {
+  width: 200px;
+  padding-top: 80px;
+  z-index: 1;
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.table__text-theme-dark {
+  padding: 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.kaufman__triangle {
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  top: 0px;
+  right: -210px;
+}
+
+.footer {
+  min-height: 350px;
+  background-color: #1f1f1f;
+  color: white;
+  padding: 60px 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.footer__columns{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__column-content-copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo-place-footer {
+  background-image: url(/images/logo_place_footer.svg);
+  background-size: 183px 35px;
+}
+
+.footer__author {
+  color: white;
+  margin: 0;
+  padding: 18px 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column-heading{
+  margin: 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer__column-links {
+  list-style-type: none;
+  padding: 20px 0 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column-link {
+  margin: 0;
+  padding: 10px 0;
+  color: white;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__social-icon {
+  font-size: 16px;
 }
