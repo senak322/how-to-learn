@@ -7,7 +7,6 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  margin: auto;
   padding: 0px;
 }
 
@@ -278,7 +277,7 @@
   z-index: 1;
 }
 
-.table__heading {
+.table__heading-theme-dark {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
