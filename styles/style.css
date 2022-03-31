@@ -28,7 +28,7 @@
   width: 183px;
 }
 
-.logo__place-header {
+.logo__place_header {
   position: absolute;
   top: 30px;
   left: 64px;
@@ -90,6 +90,8 @@
 .description {
   padding: 100px 0px 0px;
   justify-content: space-between;
+  display: flex;
+  justify-content: center;
 }
 
 .two-columns {
@@ -196,7 +198,7 @@
   font-weight: normal;
 }
 
-.table__text:nth-child(2n) {
+.table__text:nth-child(3n) {
   padding-bottom: 0;
 }
 
