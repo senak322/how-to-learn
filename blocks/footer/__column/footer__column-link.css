@@ -1,4 +1,4 @@
-.footer__column_link {
+.footer__column-link {
   margin: 0;
   padding: 0;
   color: white;
@@ -9,6 +9,6 @@
   transition: 1s ease-in-out;
 }
 
-.footer__column_link:hover {
+.footer__column-link:hover {
   opacity: 0.5;
 }
