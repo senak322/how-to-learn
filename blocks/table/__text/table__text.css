@@ -6,6 +6,6 @@
   font-weight: normal;
 }
 
-.table__text:nth-child(3n) {
+.table__text:last-child {
   padding-bottom: 0;
 }
