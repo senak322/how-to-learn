@@ -1,0 +1,9 @@
+.slider__btn_right {
+  top: 0px;
+  right: -47px;
+  background-image: url(../../../../images/right_icon-icons.com_61212.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 35px;
+  background-position: center;
+}

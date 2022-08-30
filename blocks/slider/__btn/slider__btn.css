@@ -1,0 +1,13 @@
+.slider__btn {
+  position: absolute;
+  height: 100%;
+  border-style: none;
+  cursor: pointer;
+  background-color: white;
+}
+
+.slider__btn:disabled {
+  cursor:auto;
+  opacity: 0.5;
+}
+

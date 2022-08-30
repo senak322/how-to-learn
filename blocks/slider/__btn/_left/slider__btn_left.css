@@ -1,0 +1,9 @@
+.slider__btn_left {
+  top: 0px;
+  left: -36px;
+  background-image: url(../../../../images/left_icon-icons.com_61213.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 35px;
+  background-position: center;
+}

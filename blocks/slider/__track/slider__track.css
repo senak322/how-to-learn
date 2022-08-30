@@ -1,0 +1,6 @@
+.slider__track {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  transition: .2s;
+}

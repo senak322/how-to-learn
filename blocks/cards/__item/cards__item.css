@@ -1,11 +1,9 @@
 .cards__item {
-  padding: 60px 100px 0px 0px;
+  /* padding: 60px 100px 0px 0px; */
   display: flex;
   flex-direction: column;
-  width: 240px;
+  width: 100%;
   align-items: center;
 }
 
-.cards__item:nth-child(3n) {
-  padding-right: 0;
-}
+
